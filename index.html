@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Pikaday</title>
+    <meta name="author" content="David Bushell">
+    <link rel="stylesheet" href="css/pikaday.css">
+    <link rel="stylesheet" href="css/site.css">
+<style>
+ .date-picker-item.active {
+   background-color: grey;
+ }
+
+ .date-picker-item.current {
+   background-color: green;
+ }
+</style>
+</head>
+<body>
+    <h1>Pikaday</h1>
+
+    <p class="large">A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS.</p>
+
+    <p><a href="https://github.com/dbushell/Pikaday"><strong>Pikaday source on GitHub</strong></a></p>
+
+    <label for="datepicker">Date:</label>
+    <br>
+    <input type="text" id="datepicker">
+    <input type="text" id="datepicker2">
+
+    <script src="datepicker.js"></script>
+    <script>
+     var picker = new datePicker({
+       field: document.getElementById('datepicker')
+     });
+
+     var picker2 = new datePicker({
+       field: document.getElementById('datepicker2')
+     });
+    </script>
+</body>
+</html>
